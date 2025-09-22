@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    
+    font-size: 2rem;
+    color: #461212;
+    position: relative;
+    left: 280px;
+    text-shadow: 2px 1px #fff, 1px 1px #000;
+}
+
+.todoContainer{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 60px;
+    margin-right: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1)
+}
+
+form {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+form input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #d81710;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+form button:hover {
+    background: #680d0d;
+}
+
+ul#taskList {
+    list-style: none;
+}
+
+ul#taskList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
+ul#taskList li.completed{
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.task-actions button {
+  margin-left: 8px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.task-actions .complete-btn {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.task-actions .complete-btn:hover {
+  background: #27ae60;
+}
+
+.task-actions .delete-btn {
+  background: #fff;
+  color: white;
+}
+
+.task-actions .delete-btn:hover {
+  background: #aaa;
+}
